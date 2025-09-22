@@ -1,0 +1,289 @@
+{
+"last_name": "Воробьев",
+"first_name": "Илья",
+"middle_name": "Александрович",
+"title": "C# Разработчик",
+"created_at": "2025-09-04T10:44:56+0300",
+"updated_at": "2025-09-11T14:27:00+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": 23,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": null,
+"total_experience": {
+    "months": 61
+},
+"certificate": [],
+"owner": {
+    "id": "72124770",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/72124770",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/108b9793000f5a420900bb41f052543668456f/negotiations_history"
+},
+"hidden_fields": [],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/108b9793000f5a420900bb41f052543668456f/download/%D0%92%D0%BE%D1%80%D0%BE%D0%B1%D1%8C%D0%B5%D0%B2%20%D0%98%D0%BB%D1%8C%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/108b9793000f5a420900bb41f052543668456f/download/%D0%92%D0%BE%D1%80%D0%BE%D0%B1%D1%8C%D0%B5%D0%B2%20%D0%98%D0%BB%D1%8C%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/108b9793000f5a420900bb41f052543668456f",
+"id": "108b9793000f5a420900bb41f052543668456f",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/108b9793000f5a420900bb41f052543668456f/download/%D0%92%D0%BE%D1%80%D0%BE%D0%B1%D1%8C%D0%B5%D0%B2%20%D0%98%D0%BB%D1%8C%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/108b9793000f5a420900bb41f052543668456f/download/%D0%92%D0%BE%D1%80%D0%BE%D0%B1%D1%8C%D0%B5%D0%B2%20%D0%98%D0%BB%D1%8C%D1%8F%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [],
+"work_format": [],
+"real_id": "257573385",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": null,
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": "2002-07-22",
+"education": {
+    "level": {
+    "id": "unfinished_higher",
+    "name": "Неоконченное высшее"
+    },
+    "primary": [
+    {
+        "id": "378728528",
+        "name": "Юго-Западный государственный университет, Курск",
+        "organization": "Информатика и вычислительная техника",
+        "result": "Программная инженерия",
+        "year": 2024,
+        "university_acronym": "ЮЗГУ",
+        "name_id": "40857",
+        "organization_id": null,
+        "result_id": null,
+        "education_level": {
+        "id": "unfinished_higher",
+        "name": "Неоконченное высшее"
+        }
+    },
+    {
+        "id": "378728529",
+        "name": "Курский Государственный Политехнический Колледж",
+        "organization": "Информатика и вычислительная техника",
+        "result": "Программирование в компьютерных системах",
+        "year": 2022,
+        "university_acronym": null,
+        "name_id": null,
+        "organization_id": null,
+        "result_id": null,
+        "education_level": {
+        "id": "unfinished_higher",
+        "name": "Неоконченное высшее"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2022-02-01",
+    "end": null,
+    "company": "Московский Кредитный Банк",
+    "company_id": null,
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": null,
+    "position": "Backend-разработчик / Team Lead",
+    "description": "Проект: SWIFT и финтех – сервис обработки SWIFT-сообщений (МКБ)\nПериод работы: Февраль 2024 — настоящее время\nРоль: Backend-разработчик / Team Lead\n\nНабор использованных технологий:\nC#, .NET Core, ASP.NET Core, Entity Framework Core, PostgreSQL, RabbitMQ, Hangfire, Docker, Prometheus, Grafana\n\nОписание проекта\nВысоконагруженный микросервис для обработки финансовых сообщений в стандарте SWIFT (аккредитивы, платежные поручения) в Московском Кредитном Банке. Система предназначена для автоматизации и обеспечения надежности международных расчетов. Ключевые требования: высокая доступность, отказоустойчивость, обработка большого объема сообщений (более 400 запросов в секунду) и строгая согласованность данных.\n\nЧто было сделано\nРазработка ядра обработки сообщений: Реализована асинхронная обработка входящих SWIFT-сообщений (типа MT) с использованием очередей RabbitMQ для обеспечения масштабируемости и отказоустойчивости.\nРеализация отложенных и фоновых задач: Внедрил Hangfire для выполнения отложенных операций, таких как сбор данных по сложным фильтрам, построение детализированных отчетов для пользователей и автоматическая пересылка на почту уведомлений о \"горящих аккредитивах\".\nГенерация финансовых документов: Разработал функционал для автоматического формирования отчетов и платежных документов в соответствии со стандартами SWIFT.\nОбеспечение надежности операций: Настроил механизмы идемпотентности для всех критичных операций, чтобы исключить дублирующие действия при повторных вызовах. Реализовал стратегию повторной доставки сообщений при временной недоступности внешних систем и сервисов банка.\nОптимизация производительности: Провел работу по оптимизации производительности базы данных PostgreSQL под высокие нагрузки (400+ RPS), включая индексацию, шардинг и тонкую настройку запросов.\nМикросервисная архитектура: Участвовал в проектировании и развитии микросервисной архитектуры системы, обеспечивая слабую связанность и независимое развертывание сервисов.\n\nПроект: HR-tech – система оценки сотрудников (МКБ)\nПериод работы: 2022 — 2024\nРоль: Backend-разработчик / Team Lead\n\nНабор использованных технологий:\nC#, .NET Core, ASP.NET Core, Entity Framework Core, PostgreSQL, RabbitMQ, ElasticSearch, Redis, SignalR\n\nОписание проекта\nВнутренняя корпоративная система для проведения всесторонней оценки сотрудников Московского Кредитного Банка. Проект включает в себя функционал 360-градусной оценки, проведения встреч 1:1, сбора и анализа feedback, а также оценки соответствия сотрудников требованиям Центра Компетенций. Цель проекта — создание прозрачной и объективной системы управления performance и карьерным ростом.\n\nЧто было сделано\nРуководство и менторинг: Руководил командой разработки до 6 человек. Формировал backlog и план спринта на основе бизнес-требований, выявлял приоритеты. Параллельно менторил и онбордил новых членов команды.\nРазработка с нуля: Участвовал в разработке проекта с нуля, включая проектирование базы данных, архитектуры и API.\nАлгоритм оценки компетенций: Разработал и реализовал алгоритм оценки навыков сотрудника, который автоматически проводит магпинг его компетенций на требования его текущей должности и выставляет уровень профессионального соответствия.\nReal-time функционал: Реализовал функционал для проведения парного собеседования (оценки) в реальном времени с использованием технологии SignalR для синхронного взаимодействия.\nПолнотекстовый поиск: Внедрил ElasticSearch для организации быстрого и мощного полнотекстового поиска по компетенциям, навыкам и текстовым комментариям в рамках системы оценок.\nГенерация отчетов: Разработал систему генерации отчетов для бизнеса, включая экспорт данных в Excel и построение интерактивных веб-отчетов с аналитикой.\nПовышение производительности: За счет оптимизации запросов и кеширования данных в Redis ускорил формирование ключевых отчетов в 5 раз.\nКеширование и real-time обновления: Использовал Redis для кеширования часто запрашиваемых данных (например, карточки сотрудников) и SignalR для рассылки real-time уведомлений и обновлений данных в интерфейсе."
+    },
+    {
+    "start": "2020-09-01",
+    "end": "2022-02-01",
+    "company": "ABC Консалтинг",
+    "company_id": "1923653",
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": {
+        "id": "8044983",
+        "name": "ABC Консалтинг",
+        "url": "https://api.hh.ru/employers/8044983",
+        "alternate_url": "https://hh.ru/employer/8044983",
+        "logo_urls": null
+    },
+    "position": "C#/.NET-разработчик",
+    "description": "Проект: Retail CRM система для IQOS \nПериод работы: Сентябрь 2020 — Февраль 2022\nРоль: Backend-разработчик\n\nСтек технологий:\nC#, .NET Framework, ASP.NET Core, Entity Framework, PostgreSQL, RabbitMQ, Hangfire, Docker, JavaScript, CRM Creatio, Swagger, AutoMapper\n\nОписание проекта\nРазработка высоконагруженной CRM-системы для управления клиентской базой и продажами бездымных систем нагревания табака IQOS. Система обрабатывала до 5 000 daily active users и 400-500 RPS.\n\nЧто было сделано\nИнтеграция с CRM Creatio: Разработал модули интеграции основной системы с CRM платформой\nАсинхронная обработка: Реализовал асинхронное взаимодействие сервисов через RabbitMQ (регистрация клиентов, обработка покупок, уведомления)\nФоновые задачи: Внедрил Hangfire для фоновой обработки рассылок и генерации аналитических отчетов"
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    },
+    {
+    "id": "eng",
+    "name": "Английский",
+    "level": {
+        "id": "b1",
+        "name": "B1 — Средний"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "relocation_possible",
+    "name": "могу переехать"
+    },
+    "area": [],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "never",
+    "name": "Не могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "Docker",
+    "Linux",
+    "C#",
+    "SQL",
+    "LINQ",
+    ".NET Core",
+    "ASP.NET Core",
+    "Entity Framework",
+    "SignalR",
+    "HangFire",
+    "RabbitMQ",
+    "Apache Kafka",
+    "Redis",
+    "Elasticsearch",
+    "MongoDB",
+    "PostgreSQL",
+    "MS SQL",
+    "Git",
+    "GitLab CI",
+    "Prometheus",
+    "Grafana",
+    "ELK",
+    "xUnit",
+    "nUnit",
+    "Swagger",
+    "AutoMapper",
+    "FluentValidation"
+],
+"favorited": false,
+"has_vehicle": false,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": {
+        "country": "7",
+        "city": "960",
+        "number": "6996982",
+        "formatted": "+7 960 699-69-82"
+    },
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": true,
+    "comment": null,
+    "contact_value": "+7 960 699-69-82",
+    "kind": "phone",
+    "need_verification": false,
+    "verified": true
+    },
+    {
+    "type": {
+        "id": "email",
+        "name": "Эл. почта"
+    },
+    "value": "iliyavorobievw@yandex.ru",
+    "preferred": false,
+    "contact_value": "iliyavorobievw@yandex.ru",
+    "kind": "email"
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": []
+}

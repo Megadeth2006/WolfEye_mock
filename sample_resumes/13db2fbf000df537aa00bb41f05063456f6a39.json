@@ -1,0 +1,359 @@
+{
+"last_name": "Устинов",
+"first_name": "Олег",
+"middle_name": null,
+"title": "Golang-разработчик",
+"created_at": "2024-11-03T15:17:25+0300",
+"updated_at": "2025-09-11T05:27:55+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": 32,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": {
+    "small": "https://img.hhcdn.ru/photo/768632582.jpeg?t=1757954126&h=3atDKoVa12-93ShAuhl_6g",
+    "medium": "https://img.hhcdn.ru/photo/768632583.jpeg?t=1757954126&h=N11S3yPNU5XvHRZQrvuaCQ",
+    "40": "https://img.hhcdn.ru/photo/768632581.jpeg?t=1757954126&h=oWTkjic8gwmtOUBAvqrS1Q",
+    "100": "https://img.hhcdn.ru/photo/768632582.jpeg?t=1757954126&h=3atDKoVa12-93ShAuhl_6g",
+    "500": "https://img.hhcdn.ru/photo/768632583.jpeg?t=1757954126&h=N11S3yPNU5XvHRZQrvuaCQ"
+},
+"total_experience": {
+    "months": 48
+},
+"certificate": [],
+"owner": {
+    "id": "149187008",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/149187008",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/13db2fbf000df537aa00bb41f05063456f6a39/negotiations_history"
+},
+"hidden_fields": [],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/13db2fbf000df537aa00bb41f05063456f6a39/download/%D0%A3%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%20%D0%9E%D0%BB%D0%B5%D0%B3.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/13db2fbf000df537aa00bb41f05063456f6a39/download/%D0%A3%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%20%D0%9E%D0%BB%D0%B5%D0%B3.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/13db2fbf000df537aa00bb41f05063456f6a39",
+"id": "13db2fbf000df537aa00bb41f05063456f6a39",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/13db2fbf000df537aa00bb41f05063456f6a39/download/%D0%A3%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%20%D0%9E%D0%BB%D0%B5%D0%B3.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/13db2fbf000df537aa00bb41f05063456f6a39/download/%D0%A3%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%20%D0%9E%D0%BB%D0%B5%D0%B3.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [
+    {
+    "id": "FULL",
+    "name": "Постоянная работа"
+    },
+    {
+    "id": "PART_TIME",
+    "name": "Подработка"
+    }
+],
+"work_format": [
+    {
+    "id": "ON_SITE",
+    "name": "На месте работодателя"
+    }
+],
+"real_id": "234174378",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": "telegram: https://t.me/OlegUstinov01\n\nТакже знаю javascript, typescript, react, next.js и в целом погружен во frontend",
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": "1993-03-19",
+"education": {
+    "level": {
+    "id": "higher",
+    "name": "Высшее"
+    },
+    "primary": [
+    {
+        "id": "361861400",
+        "name": "Омский юридический институт, Омск",
+        "organization": "Юриспруденция",
+        "result": "Правоохранительная деятельность (юрист)",
+        "year": 2015,
+        "university_acronym": "ОмЮИ",
+        "name_id": "43176",
+        "organization_id": null,
+        "result_id": "81",
+        "education_level": {
+        "id": "higher",
+        "name": "Высшее"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2024-08-01",
+    "end": null,
+    "company": "Точка",
+    "company_id": "1400298",
+    "industry": null,
+    "industries": [
+        {
+        "id": "7.540",
+        "name": "Разработка программного обеспечения"
+        },
+        {
+        "id": "43.647",
+        "name": "Банк"
+        }
+    ],
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "company_url": "https://tochka.com/",
+    "employer": {
+        "id": "2324020",
+        "name": "Точка",
+        "url": "https://api.hh.ru/employers/2324020",
+        "alternate_url": "https://hh.ru/employer/2324020",
+        "logo_urls": {
+        "240": "https://img.hhcdn.ru/employer-logo/7441438.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/1455454.png",
+        "90": "https://img.hhcdn.ru/employer-logo/7441437.png"
+        }
+    },
+    "position": "Golang-разработчик",
+    "description": "Система электронного документооборота (ЭДО)\n\nО продукте: Сервис для автоматизации юридически значимого обмена документами с контрагентами, включая интеграции с внешними платформами и учетными системами.\n\nОбязанности:\n\t-\tРазработка backend-сервисов на Go для обработки юридически значимых документов.\n\t-\tРеализация бизнес-логики: маршрутизация документов, контроль статусов, автоматическая регистрация и хранение.\n\t-\tИнтеграция с внешними API.\n\t-\tРеализация сервисов актуализации реквизитов по контрагентам.\n\t-\tРазработка кастомных middleware для трассировки запросов.\n\t-\tРаботал с S3.\n       -       Настраивал алерты.\n       -       Анализ метрик SLO, в целях выявления проблемных мест для рефакторинга и оптимизации.\n\nРезультаты:\n\t1.\tРазработал функциональность по автоматической актуализации контрагентов, уменьшив количество ошибок в учётных данных.\n\t2.\tНастроил распределённую трассировку с использованием OpenTelemetry, упростив отладку и мониторинг.\n\t3.\tПовысил стабильность интеграции с внешними сервисами путём ввода retries, timeouts и унифицированной схемы логирования.\n\nСтек: Go, PostgreSQL, GORM, Redis, REST/gRPC, Docker, Kubernetes, OpenTelemetry, GitLab CI/CD, TeamCity."
+    },
+    {
+    "start": "2023-03-01",
+    "end": "2024-08-01",
+    "company": "МТС Digital",
+    "company_id": null,
+    "industry": null,
+    "industries": [
+        {
+        "id": "7.541",
+        "name": "Интернет-компания (поисковики, платежные системы, соц.сети, информационно-познавательные и развлекательные ресурсы, продвижение сайтов и прочее)"
+        }
+    ],
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "company_url": "http://mts-digital.ru/",
+    "employer": null,
+    "position": "Golang-разработчик",
+    "description": "Сервис комплексного медиапланирования для рекламных агентств\n\nО продукте: Платформа для формирования, управления и согласования медиапланов с интеграциями в рекламные кабинеты и аналитические системы.\n\nОбязанности:\n\t-\tРазработка и поддержка backend-сервисов на Go.\n\t-\tОптимизация микросервисной архитектуры.\n\t-\tИнтеграция внешних API (Яндекс.Директ, ВКонтакте, MyTarget и др.).\n\t-\tУчастие в архитектурных сессиях и релизном планировании.\n\t-\tНаписание unit-тестов, проведение код-ревью.\n\nРезультаты:\n\t1.\tРазработал сервис справочника шаблонов, ускорив подготовку кампаний.\n\t2.\tПовысил покрытие unit-тестами с 45% до 80%, что сократило баги на проде.\n\t3.\tРеализовал модули для интеграции с рекламными площадками.\n\t4.\tВнедрил этап changelog-сборки в CI/CD, улучшив прозрачность релизов.\n\nСтек: Go, PostgreSQL, Kafka, Redis, Docker, Kubernetes, GitLab, gRPC, GraphQL, Cosmo Router."
+    },
+    {
+    "start": "2021-10-01",
+    "end": "2023-03-01",
+    "company": "BitComSolution",
+    "company_id": "2306261",
+    "industry": null,
+    "industries": [
+        {
+        "id": "7.540",
+        "name": "Разработка программного обеспечения"
+        },
+        {
+        "id": "7.539",
+        "name": "Системная интеграция,  автоматизации технологических и бизнес-процессов предприятия, ИТ-консалтинг"
+        }
+    ],
+    "area": {
+        "id": "68",
+        "name": "Омск",
+        "url": "https://api.hh.ru/areas/68"
+    },
+    "company_url": "https://bitcomsolution.com/",
+    "employer": {
+        "id": "4606627",
+        "name": "BitComSolution",
+        "url": "https://api.hh.ru/employers/4606627",
+        "alternate_url": "https://hh.ru/employer/4606627",
+        "logo_urls": {
+        "90": "https://img.hhcdn.ru/employer-logo/4118424.png",
+        "240": "https://img.hhcdn.ru/employer-logo/4118425.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/919462.png"
+        }
+    },
+    "position": "Golang-разработчик",
+    "description": "О продукте: Платформа мониторинга кибербезопасности для SMB-сегмента. Система анализирует сетевой трафик и внешние источники угроз в реальном времени, формируя «панель рисков» для специалистов по безопасности.\n\nОбязанности:\n\nРазработка и поддержка backend-сервисов.\n\nРазработка микросервисов на Go: сбор и агрегация логов, управление правилами обнаружения угроз.\n\nИнтеграция со сторонними сервисами (системы SIEM, антивирусные облака, сетевые сканеры) для автоматического формирования уведомлений об инцидентах.\n\nНаписание unit-тестов.\n\nРезультаты:\n\n1.\tСоздал адаптеры для интеграции со сторонними сервисами мониторинга кибербезопасности, сократив время на обновление логики при изменении внешних API.\n\nСтек технологий: Go, PostgreSQL, Docker, REST API."
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    },
+    {
+    "id": "eng",
+    "name": "Английский",
+    "level": {
+        "id": "b1",
+        "name": "B1 — Средний"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "relocation_possible",
+    "name": "могу переехать"
+    },
+    "area": [],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    },
+    {
+    "id": "flexible",
+    "name": "Гибкий график"
+    },
+    {
+    "id": "remote",
+    "name": "Удаленная работа"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "ready",
+    "name": "Могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "PostgreSQL",
+    "SQL",
+    "Golang",
+    "Docker",
+    "Go",
+    "Kafka",
+    "Redis",
+    "JavaScript",
+    "REST API",
+    "Gitlab",
+    "JSON API",
+    "Git",
+    "Agile",
+    "Scrum",
+    "GraphQL",
+    "Atlassian Jira",
+    "CI/CD",
+    "gRPC",
+    "Linux",
+    "TypeScript",
+    "HTTP",
+    "Kubernetes"
+],
+"favorited": false,
+"has_vehicle": null,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": {
+        "country": "7",
+        "city": "933",
+        "number": "1852797",
+        "formatted": "+7 933 185-27-97"
+    },
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": true,
+    "comment": null,
+    "contact_value": "+7 933 185-27-97",
+    "kind": "phone",
+    "need_verification": false,
+    "verified": true
+    },
+    {
+    "type": {
+        "id": "email",
+        "name": "Эл. почта"
+    },
+    "value": "lamorazmo_o@mail.ru",
+    "preferred": false,
+    "contact_value": "lamorazmo_o@mail.ru",
+    "kind": "email"
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": []
+}

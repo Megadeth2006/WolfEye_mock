@@ -16,8 +16,9 @@ AgeYears = Annotated[int, Field(ge=0, le=120)]
 class GetVacanciesResponse(BaseModel):
     """Демка: список вакансий и предложений на них"""
     name: str = Field(..., description="Название вакансии")
-    transaction_id: str = Field(..., description="ID транзакции для отслеживания результатов")
+    transaction_id: str = Field(..., description="ID новой транзакции для отслеживания результатов")
     count_respondents: NonNegInt = Field(..., description="Количество респондентов")
+    all_transactions: list[Transaction] = Field(default_factory=list, description="Все транзакции для этой вакансии")
 
 
 class ProcessResumesRequest(BaseModel):
@@ -64,13 +65,6 @@ class ResumeDetailResponse(BaseModel):
 
 # Общий набор статусов на уровне API
 AnalysisStatus = Literal["pending", "processing", "completed", "failed"]
-
-# Константы для статусов (для удобного использования)
-class Status:
-    PENDING = "pending"
-    PROCESSING = "processing" 
-    COMPLETED = "completed"
-    FAILED = "failed"
 
 class GetResultsResponse(BaseModel):
     """Ответ со списком результатов анализа"""
@@ -120,5 +114,3 @@ class TransactionResumeLink(BaseModel):
     transaction_id: str = Field(..., description="ID транзакции")
     resume_id: str = Field(..., description="ID резюме")
 
-
-# ---------- Дополнительные модели для API ----------

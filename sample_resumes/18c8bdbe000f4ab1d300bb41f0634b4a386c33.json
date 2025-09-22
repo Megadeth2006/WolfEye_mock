@@ -1,0 +1,246 @@
+{
+"last_name": "Назаров",
+"first_name": "Антон",
+"middle_name": null,
+"title": "Golang-разработчик",
+"created_at": "2025-08-21T13:44:51+0300",
+"updated_at": "2025-08-21T14:20:27+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": 27,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": null,
+"total_experience": {
+    "months": 48
+},
+"certificate": [],
+"owner": {
+    "id": "159095649",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/159095649",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/18c8bdbe000f4ab1d300bb41f0634b4a386c33/negotiations_history"
+},
+"hidden_fields": [],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/18c8bdbe000f4ab1d300bb41f0634b4a386c33/download/%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D0%BE%D0%B2%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/18c8bdbe000f4ab1d300bb41f0634b4a386c33/download/%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D0%BE%D0%B2%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/18c8bdbe000f4ab1d300bb41f0634b4a386c33",
+"id": "18c8bdbe000f4ab1d300bb41f0634b4a386c33",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/18c8bdbe000f4ab1d300bb41f0634b4a386c33/download/%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D0%BE%D0%B2%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/18c8bdbe000f4ab1d300bb41f0634b4a386c33/download/%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D0%BE%D0%B2%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [],
+"work_format": [],
+"real_id": "256553427",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": null,
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": "1998-05-05",
+"education": {
+    "level": {
+    "id": "higher",
+    "name": "Высшее"
+    },
+    "primary": [
+    {
+        "id": "377880617",
+        "name": "Национальный исследовательский университет «Высшая школа экономики», Москва",
+        "organization": "Факультет компьютерных наук",
+        "result": "Бакалавриат, «Прикладная информатика»",
+        "year": 2020,
+        "university_acronym": "НИУ ВШЭ",
+        "name_id": "39307",
+        "organization_id": null,
+        "result_id": null,
+        "education_level": {
+        "id": "higher",
+        "name": "Высшее"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2022-07-01",
+    "end": null,
+    "company": "OmniMarket",
+    "company_id": null,
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": null,
+    "position": "Middle Go Developer",
+    "description": "Снизил время отклика поискового сервиса с ~800 мс до 150 мс за счёт оптимизации индексов в PostgreSQL и кэширования результатов в Redis, благодаря чему конверсия поиска выросла на 8% (пользователи быстрее находят нужные товары и совершают покупки).\n\nОбеспечил стабильную работу платформы при пиковых нагрузках Black Friday, введя асинхронную обработку заказов через очередь и оптимизировав сервис платежей; система выдержала 3-кратный всплеск нагрузки без потери производительности, что позволило на 25% увеличить выручку в дни распродажи.\n\nРазработал сервис персональных рекомендаций товаров на Go, анализирующий историю просмотров и покупок пользователей, что позволило увеличить средний чек на 7% и долю повторных покупок на 12% за счёт более релевантных рекомендаций.\n\nВыделил из монолита ключевые домены в независимые сервисы, уменьшив связанность компонентов и упростив горизонтальное масштабирование; внедрил CI/CD с автоматическим тестированием, увеличив частоту релизов с ежемесячной до еженедельной и существенно ускорив доставку новых функций бизнесу.\nСтек: Go, PostgreSQL, Redis, NATS, Docker, Kubernetes, Jenkins CI/CD"
+    },
+    {
+    "start": "2021-10-01",
+    "end": "2022-06-01",
+    "company": "Borealis Finance",
+    "company_id": null,
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": null,
+    "position": "Junior Go Developer",
+    "description": "Уменьшил среднюю задержку обработки платежей на 45% благодаря оптимизации SQL-запросов и внедрению кэширования Redis, что улучшило пользовательский опыт и повысило пропускную способность системы до 500 транзакций/с.\n\nРеализовал сервис скоринга заемщиков на Go с потоковой обработкой данных через Kafka, повысив точность оценки кредитного риска на 15% и долю одобренных заявок на 20%, что обеспечило ~10% рост кредитного портфеля компании.\n\nВнедрил систему обнаружения мошеннических транзакций  на базе Go и Kafka, что позволило снизить потери от мошенничества на 30%  и укрепило доверие клиентов.\n\nРуководил переходом от монолита к микросервисной архитектуре, улучшив отказоустойчивость (инциденты снизились на 40%) и масштабируемость; настроил CI/CD, сократив цикл релиза с 2 недель до 1 дня.\nСтек: Go, PostgreSQL, Redis, Kafka, ClickHouse, gRPC, Docker, Kubernetes, GitLab CI"
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "no_relocation",
+    "name": "не могу переехать"
+    },
+    "area": [],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "never",
+    "name": "Не могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "PostgreSQL",
+    "Golang",
+    "Git",
+    "Docker",
+    "Kafka",
+    "Kubernetes",
+    "MongoDB",
+    "Redis",
+    "REST API",
+    "RabbitMQ",
+    "Grafana",
+    "Prometheus",
+    "Jenkins CI/CD"
+],
+"favorited": false,
+"has_vehicle": null,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": {
+        "country": "7",
+        "city": "983",
+        "number": "4219081",
+        "formatted": "+7 983 421-90-81"
+    },
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": false,
+    "comment": null,
+    "contact_value": "+7 983 421-90-81",
+    "kind": "phone",
+    "need_verification": false,
+    "verified": true
+    },
+    {
+    "type": {
+        "id": "email",
+        "name": "Эл. почта"
+    },
+    "value": "antonnazarovt00@mail.ru",
+    "preferred": true,
+    "contact_value": "antonnazarovt00@mail.ru",
+    "kind": "email"
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": []
+}
