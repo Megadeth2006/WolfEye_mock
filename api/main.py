@@ -551,7 +551,9 @@ def process_resume_data(resume_data: dict) -> ResumeDetailResponse:
             similarity = random.randint(80, 100)
             legends.append(Legends(original_legend=original_legend, copy_legend=copy_legend, similarity=similarity))
         else:  # Первая легенда (индекс 0)
-            legends.append(Legends(original_legend=original_legend, similarity=95))
+            # Для первой легенды создаем копию с высокой схожестью
+            copy_legend = create_copy_legend(original_legend, resume_data)
+            legends.append(Legends(original_legend=original_legend, copy_legend=copy_legend, similarity=95))
     
     # Рейтинг уже получен из мок-данных выше
     
