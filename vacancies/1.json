@@ -1,0 +1,24 @@
+{
+    "id": "vac_1",
+    "title": "Senior Python Developer",
+    "company": "TechCorp",
+    "salary_from": 150000,
+    "salary_to": 250000,
+    "location": "Москва",
+    "description": "Ищем опытного Python разработчика для работы над высоконагруженными системами",
+    "count_respondents": 45,
+    "requirements": [
+        "Python 3.8+",
+        "Django/FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Kubernetes"
+    ],
+    "benefits": [
+        "Гибкий график",
+        "Удаленная работа",
+        "Медицинская страховка",
+        "Спортивный зал"
+    ]
+}

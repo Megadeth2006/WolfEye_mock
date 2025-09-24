@@ -1,0 +1,313 @@
+{
+"last_name": "Панарин",
+"first_name": "Александр",
+"middle_name": null,
+"title": "Golang-разработчик",
+"created_at": "2025-09-01T22:11:16+0300",
+"updated_at": "2025-09-09T13:47:58+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": 21,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": null,
+"total_experience": {
+    "months": 43
+},
+"certificate": [],
+"owner": {
+    "id": "159462431",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/159462431",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/22f2b4ee000f56dc5b00bb41f0564e71743246/negotiations_history"
+},
+"hidden_fields": [],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/22f2b4ee000f56dc5b00bb41f0564e71743246/download/%D0%9F%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D0%BD%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/22f2b4ee000f56dc5b00bb41f0564e71743246/download/%D0%9F%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D0%BD%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/22f2b4ee000f56dc5b00bb41f0564e71743246",
+"id": "22f2b4ee000f56dc5b00bb41f0564e71743246",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/22f2b4ee000f56dc5b00bb41f0564e71743246/download/%D0%9F%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D0%BD%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/22f2b4ee000f56dc5b00bb41f0564e71743246/download/%D0%9F%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D0%BD%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [],
+"work_format": [],
+"real_id": "257350747",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": "Разработчик высокопроизводительных и масштабируемых микросервисных решений на языке программирования Go. Готов быстро влиться в Ваш проект и начать приносить пользу Вашей компании. Имею опыт работы с технологиями: Go, gRPC, HTTP, PostgreSQL, MongoDB, Redis, Kafka, Nats, Prometheus, Grafana, Loki, Kubernetes.\n\nКонтакты для быстрой связи:\nTelegram: @aa_panarin\nWhatsApp: +79311214880",
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": "2004-01-30",
+"education": {
+    "level": {
+    "id": "higher",
+    "name": "Высшее"
+    },
+    "primary": [
+    {
+        "id": "378549228",
+        "name": "Московский государственный технический университет имени Н.Э. Баумана (национальный исследовательский университет), Москва",
+        "organization": "Факультет информатики и систем управления",
+        "result": "Прикладная математика и информатика",
+        "year": 2025,
+        "university_acronym": "МГТУ им. Н.Э. Баумана",
+        "name_id": "38921",
+        "organization_id": "24478",
+        "result_id": null,
+        "education_level": {
+        "id": "higher",
+        "name": "Высшее"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2024-09-01",
+    "end": null,
+    "company": "IT_One",
+    "company_id": "1819768",
+    "industry": null,
+    "industries": [],
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "company_url": null,
+    "employer": {
+        "id": "5050306",
+        "name": "IT_One",
+        "url": "https://api.hh.ru/employers/5050306",
+        "alternate_url": "https://hh.ru/employer/5050306",
+        "logo_urls": {
+        "original": "https://img.hhcdn.ru/employer-logo-original/1409973.png",
+        "90": "https://img.hhcdn.ru/employer-logo/7259552.png",
+        "240": "https://img.hhcdn.ru/employer-logo/7259553.png"
+        }
+    },
+    "position": "Golang-разработчик",
+    "description": "Разработка серверной части туристического сервиса Tripster:\n- сделал бекенд более масштабируемым, переписав с командой проект с монолита(PHP) на микросервисную архитектуру(Go).\n- реализовал автоматическое дополнение к поисковому запросу в системе при помощи Elasticsearch, что значительно улучшило пользовательский опыт.\n- разрабатывал новую систему рекомендаций, которая основывается на фактических запросах и покупках пользователей, а также гипотезах о принадлежности к группам населения.\n- покрывал код юнит и интеграционными тестами.\n\nСтек: Go, RestAPI, PostgreSQL, Redis, Kafka, Prometheus, Grafana, Loki, Elasticsearch, Kubernetes."
+    },
+    {
+    "start": "2022-03-01",
+    "end": "2024-09-01",
+    "company": "YADRO",
+    "company_id": "1830734",
+    "industry": null,
+    "industries": [
+        {
+        "id": "7.540",
+        "name": "Разработка программного обеспечения"
+        },
+        {
+        "id": "7.539",
+        "name": "Системная интеграция,  автоматизации технологических и бизнес-процессов предприятия, ИТ-консалтинг"
+        }
+    ],
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "company_url": null,
+    "employer": {
+        "id": "1993194",
+        "name": "YADRO",
+        "url": "https://api.hh.ru/employers/1993194",
+        "alternate_url": "https://hh.ru/employer/1993194",
+        "logo_urls": {
+        "90": "https://img.hhcdn.ru/employer-logo/7201431.png",
+        "240": "https://img.hhcdn.ru/employer-logo/7201432.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/1395412.png"
+        }
+    },
+    "position": "Golang-разработчик",
+    "description": "Разрабатывал облачные сервисы для мобильной операционной системы kvadraOS:\n- реализовал сервис отслеживания и передачи изменений пользовательских файлов между устройствами одной учётной записи kvadra ID.\n- расширил функционал системы идентификации пользователя kvadra ID, добавив безопасное редактирование важных пользовательских данных учётной записи.\n- принимал активное участие в разработке облачного хранилища резервных копий и файлов доступного пользователям операционной системы, разработав сервисы уведомлений и файлового менеджера.\n- рефакторил существующие сервисы, писал юнит и интеграционные тесты.\n\nСтек: Go, gRPC, PostgreSQL, Redis, Nats, Prometheus, Grafana, Loki, Kubernetes."
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    },
+    {
+    "id": "eng",
+    "name": "Английский",
+    "level": {
+        "id": "c1",
+        "name": "C1 — Продвинутый"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "relocation_possible",
+    "name": "могу переехать"
+    },
+    "area": [],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "ready",
+    "name": "Могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "Golang",
+    "Go",
+    "SQL",
+    "PostgreSQL",
+    "REST API",
+    "REST",
+    "API",
+    "HTTP",
+    "gRPC",
+    "Docker",
+    "Docker-compose",
+    "Kafka",
+    "RabbitMQ",
+    "Nats",
+    "Redis",
+    "WebSocket",
+    "Gitlab",
+    "GitLab CI",
+    "Git",
+    "CI/CD",
+    "Linux",
+    "Kubernetes",
+    "MongoDB",
+    "Apache Kafka",
+    "Clickhouse",
+    "Elasticsearch",
+    "Prometheus",
+    "Grafana",
+    "Backend",
+    "IT"
+],
+"favorited": false,
+"has_vehicle": null,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": {
+        "country": "7",
+        "city": "931",
+        "number": "1214880",
+        "formatted": "+7 931 121-48-80"
+    },
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": true,
+    "comment": null,
+    "contact_value": "+7 931 121-48-80",
+    "kind": "phone",
+    "need_verification": false,
+    "verified": true
+    },
+    {
+    "type": {
+        "id": "telegram",
+        "name": "Telegram"
+    },
+    "contact_value": "@aa_panarin",
+    "value": "@aa_panarin",
+    "kind": "primary",
+    "preferred": false,
+    "links": {
+        "ios": "https://t.me/aa_panarin",
+        "web": "https://t.me/aa_panarin",
+        "android": "https://t.me/aa_panarin"
+    }
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": []
+}

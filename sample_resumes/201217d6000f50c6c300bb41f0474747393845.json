@@ -1,0 +1,343 @@
+{
+"last_name": "Дагданча",
+"first_name": "Кирилл",
+"middle_name": null,
+"title": "Golang-разработчик",
+"created_at": "2025-08-27T10:29:49+0300",
+"updated_at": "2025-08-30T10:18:18+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": null,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": null,
+"total_experience": {
+    "months": 63
+},
+"certificate": [],
+"owner": {
+    "id": "159279829",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/159279829",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/201217d6000f50c6c300bb41f0474747393845/negotiations_history"
+},
+"hidden_fields": [],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/201217d6000f50c6c300bb41f0474747393845/download/%D0%94%D0%B0%D0%B3%D0%B4%D0%B0%D0%BD%D1%87%D0%B0%20%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/201217d6000f50c6c300bb41f0474747393845/download/%D0%94%D0%B0%D0%B3%D0%B4%D0%B0%D0%BD%D1%87%D0%B0%20%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/201217d6000f50c6c300bb41f0474747393845",
+"id": "201217d6000f50c6c300bb41f0474747393845",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/201217d6000f50c6c300bb41f0474747393845/download/%D0%94%D0%B0%D0%B3%D0%B4%D0%B0%D0%BD%D1%87%D0%B0%20%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/201217d6000f50c6c300bb41f0474747393845/download/%D0%94%D0%B0%D0%B3%D0%B4%D0%B0%D0%BD%D1%87%D0%B0%20%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [],
+"work_format": [],
+"real_id": "256952003",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": null,
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": null,
+"education": {
+    "level": {
+    "id": "master",
+    "name": "Магистр"
+    },
+    "primary": [
+    {
+        "id": "378220057",
+        "name": "Национальный исследовательский университет ИТМО, Санкт-Петербург",
+        "organization": "ФИТиП",
+        "result": "Информационные системы и технологии",
+        "year": 2025,
+        "university_acronym": "ИТМО",
+        "name_id": "39872",
+        "organization_id": null,
+        "result_id": "610",
+        "education_level": {
+        "id": "master",
+        "name": "Магистр"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2024-10-01",
+    "end": null,
+    "company": "OZON.ru, Интернет-магазин",
+    "company_id": "2180",
+    "industry": {
+        "id": "41",
+        "name": "Розничная торговля"
+    },
+    "industries": [
+        {
+        "id": "49.412",
+        "name": "Туристические компании"
+        },
+        {
+        "id": "5.467",
+        "name": "Курьерская, почтовая доставка"
+        },
+        {
+        "id": "5.466",
+        "name": "Складские услуги"
+        },
+        {
+        "id": "7.541",
+        "name": "Интернет-компания (поисковики, платежные системы, соц.сети, информационно-познавательные и развлекательные ресурсы, продвижение сайтов и прочее)"
+        },
+        {
+        "id": "41.525",
+        "name": "Интернет-магазин"
+        }
+    ],
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "company_url": null,
+    "employer": {
+        "id": "2180",
+        "name": "OZON.ru, Интернет-магазин",
+        "url": "https://api.hh.ru/employers/2180",
+        "alternate_url": "https://hh.ru/employer/2180",
+        "logo_urls": {
+        "90": "https://img.hhcdn.ru/employer-logo/5899117.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/1069622.png",
+        "240": "https://img.hhcdn.ru/employer-logo/5899118.png"
+        }
+    },
+    "position": "Разработчик информационных систем",
+    "description": "- Разработал высоконагруженный бэкенд для платформы брендированного маркетплейса, обрабатывающий более 1000\nRPS с сохранением времени отклика критических эндпоинтов ниже 100 мс\n- Спроектировал и реализовал новый микросервис для автоматизации генерации фидов продуктов Ozon Bank, сократив\nвремя обновления с 2 часов до 400 миллисекунд и устранив ручные процессы\n- Разработал и интегрировал модель управления доступом на основе ролей (RBAC) для ресурсов бот-сервиса, повысив\nбезопасность и обеспечив детальное управление разрешениями для каналов с более чем 1 000 000 подписчиков\n- Работал над генерацией и предоставлением рекламных фидов для внешних систем"
+    },
+    {
+    "start": "2024-03-01",
+    "end": "2024-07-01",
+    "company": "Яндекс",
+    "company_id": "1740",
+    "industry": {
+        "id": "7",
+        "name": "Информационные технологии, системная интеграция, интернет"
+    },
+    "industries": [
+        {
+        "id": "7.541",
+        "name": "Интернет-компания (поисковики, платежные системы, соц.сети, информационно-познавательные и развлекательные ресурсы, продвижение сайтов и прочее)"
+        }
+    ],
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "company_url": "https://yandex.ru/jobs/",
+    "employer": {
+        "id": "1740",
+        "name": "Яндекс",
+        "url": "https://api.hh.ru/employers/1740",
+        "alternate_url": "https://hh.ru/employer/1740",
+        "logo_urls": {
+        "90": "https://img.hhcdn.ru/employer-logo/3790847.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/837491.png",
+        "240": "https://img.hhcdn.ru/employer-logo/3790848.png"
+        }
+    },
+    "position": "Инженер-программист Yandex.Cloud IAM Go",
+    "description": "- Перепроектировал и распараллелил код сервиса, отвечающего за запуск e2e-тестов, что повысило надежность и\nускорило выявление багов с помощью мониторинга\n- Разрабатывал и поддерживал более 40 тестовых сценариев e2e, охватывающие основные функции IAM, такие как\nаутентификация пользователей и управление разрешениями\n- Реализовал механизм фоновой очистки неиспользуемых ресурсов(сервисные аккаунты, API-ключи, группы), который\nежедневно удалял около 31% от всех создаваемых артефактов"
+    },
+    {
+    "start": "2021-09-01",
+    "end": "2024-02-01",
+    "company": "BilimStroi",
+    "company_id": null,
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": null,
+    "position": "Backend-разработчик Go",
+    "description": "- Участвовал в проектировании и реализовал API на Go для локального маркетплейса, соединяющего клиентов с\nпрофессионалами домашних услуг. Разработал ключевые функции, включая бронирование, уведомления и систему\nрейтингов\n- Интегрировал шлюз уведомлений Telegram для мгновенного назначения новых заказов исполнителям, что сократило\nсреднее время реакции на новые запросы с 2 часов до 20 минут и увеличило плотность бронирований для\nспециалистов"
+    },
+    {
+    "start": "2020-01-01",
+    "end": "2021-04-01",
+    "company": "Разработчик Telegram-ботов",
+    "company_id": null,
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": null,
+    "position": "Python-разработчик",
+    "description": "- Создавал простых Telegram-ботов для знакомых и небольших чатов: боты-викторины, опросники и автоматические\nответчики\n- Научился работать с библиотекой aiogram и БД на Python\n- Освоил базовые принципы работы с API Telegram и хостингом ботов на сервере"
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "relocation_possible",
+    "name": "могу переехать"
+    },
+    "area": [
+    {
+        "id": "2",
+        "name": "Санкт-Петербург",
+        "url": "https://api.hh.ru/areas/2"
+    }
+    ],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "never",
+    "name": "Не могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "PostgreSQL",
+    "Golang",
+    "Git",
+    "Go",
+    "Docker",
+    "Python",
+    "Kubernetes",
+    "Linux",
+    "Kafka",
+    "REST API",
+    "SQL",
+    "HTTP",
+    "Английский язык"
+],
+"favorited": false,
+"has_vehicle": null,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": {
+        "country": "7",
+        "city": "969",
+        "number": "2071160",
+        "formatted": "+7 969 207-11-60"
+    },
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": true,
+    "comment": null,
+    "contact_value": "+7 969 207-11-60",
+    "kind": "phone",
+    "need_verification": false,
+    "verified": true
+    },
+    {
+    "type": {
+        "id": "telegram",
+        "name": "Telegram"
+    },
+    "contact_value": "@kirsa0132",
+    "value": "@kirsa0132",
+    "kind": "primary",
+    "preferred": false,
+    "links": {
+        "web": "https://t.me/kirsa0132",
+        "android": "https://t.me/kirsa0132",
+        "ios": "https://t.me/kirsa0132"
+    }
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": []
+}

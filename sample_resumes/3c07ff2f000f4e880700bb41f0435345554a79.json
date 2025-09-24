@@ -1,0 +1,336 @@
+{
+"last_name": "Новиков",
+"first_name": "Артем",
+"middle_name": null,
+"title": "Python-разработчик",
+"created_at": "2025-08-25T14:33:20+0300",
+"updated_at": "2025-09-10T11:35:14+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": null,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": null,
+"total_experience": {
+    "months": 51
+},
+"certificate": [],
+"owner": {
+    "id": "159213088",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/159213088",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/3c07ff2f000f4e880700bb41f0435345554a79/negotiations_history"
+},
+"hidden_fields": [
+    {
+    "id": "phones",
+    "name": "Все указанные в резюме телефоны"
+    }
+],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/3c07ff2f000f4e880700bb41f0435345554a79/download/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%90%D1%80%D1%82%D0%B5%D0%BC.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/3c07ff2f000f4e880700bb41f0435345554a79/download/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%90%D1%80%D1%82%D0%B5%D0%BC.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/3c07ff2f000f4e880700bb41f0435345554a79",
+"id": "3c07ff2f000f4e880700bb41f0435345554a79",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/3c07ff2f000f4e880700bb41f0435345554a79/download/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%90%D1%80%D1%82%D0%B5%D0%BC.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/3c07ff2f000f4e880700bb41f0435345554a79/download/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%90%D1%80%D1%82%D0%B5%D0%BC.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [],
+"work_format": [],
+"real_id": "256804871",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": "tg: https://tg.me/artlikeme",
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": null,
+"education": {
+    "level": {
+    "id": "bachelor",
+    "name": "Бакалавр"
+    },
+    "primary": [
+    {
+        "id": "378092279",
+        "name": "Южный федеральный университет, Ростов-на-Дону",
+        "organization": null,
+        "result": "Информационная безопасность",
+        "year": 2025,
+        "university_acronym": "ЮФУ",
+        "name_id": "43413",
+        "organization_id": null,
+        "result_id": null,
+        "education_level": {
+        "id": "bachelor",
+        "name": "Бакалавр"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2023-06-01",
+    "end": null,
+    "company": "Дивергент",
+    "company_id": "1944198",
+    "industry": null,
+    "industries": [
+        {
+        "id": "7.540",
+        "name": "Разработка программного обеспечения"
+        },
+        {
+        "id": "7.539",
+        "name": "Системная интеграция,  автоматизации технологических и бизнес-процессов предприятия, ИТ-консалтинг"
+        }
+    ],
+    "area": null,
+    "company_url": null,
+    "employer": {
+        "id": "8997092",
+        "name": "Дивергент",
+        "url": "https://api.hh.ru/employers/8997092",
+        "alternate_url": "https://hh.ru/employer/8997092",
+        "logo_urls": {
+        "240": "https://img.hhcdn.ru/employer-logo/6724167.png",
+        "90": "https://img.hhcdn.ru/employer-logo/6724166.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/1275966.png"
+        }
+    },
+    "position": "Python-разработчик",
+    "description": "Проект: billed.pro — система учета времени.\n\nЗадачи:\n- Разработка системы по учету рабочего времени Billed.pro;\n- Реализованы сервисы отчетов, основного функционала, телеграмм бот, отправка уведомлений/отчетов, сервис отложенных задач по средствам celery;\n- Реализована интеграция с Yandex.Tracker API, Google Calendar; Yandex Calendar, Jira, Bitrix;\n- Написание unit-тестов;\n- Интеграция с OpenAi API для суммаризации данных;\n- Проведение онбординга новых сотрудников;\n- Проведение код ревью;\n\nДостижения:\n- Оптимизировал производительность сервиса отчетов, сократив время генерации на 20% за счет кеширования и оптимизации SQL-запросов;\n- Реализовал интеграцию с Jira, Yandex.Tracker, Mail Calendar, Yandex Calendar что в 2 раза увеличило конверсию продукта;\n- Автоматизировал отправку уведомлений через Telegram-бота и email, уменьшив нагрузку на поддержку на 30%;\n- Внедрил систему отложенных задач на Celery, что позволило снизить нагрузку на основной сервер и улучшить отказоустойчивость;\n- Повысил покрытие кода unit-тестами до 80%, сократив количество багов в production на 40%;\n- Ускорил онбординг новых разработчиков за счет документации и шаблонов, сократив время ввода в проект с 3 недель до 1;\n- Ввел систему мониторинга ошибок Sentry на 3 контурах, что позволило узнавать обо всех ошибках мгновенно и ускорило их исправление;\n\nПроект: сервис-ассистент для HR-специалистов, разработанный для автоматизации процесса поиска и подбора персонала.\n\nЗадачи:\n- Разработка основного функционала;\n- Разработка tg бота;\n- Проектирование архитектуры;\n- Интеграция с HeadHunter, Habr;\n- Реализация микросковисоного взаимодействия через RabbitMQ\n- Интеграция с OpenAi API, Deepseek API\n- Написание unit-тестов.\n\nДостижения:\n- Внедрил AI-фильтрацию резюме, сократив время первичного отбора кандидатов на 90% и кратно повысив релевантность отобранных анкет;\n- Реализовал интеграцию с HeadHunter и Habr Career, автоматизировав 90% сбора вакансий и кандитов, сократив ручной труд HR;\n- Построил отказоустойчивую микросервисную архитектуру, повысив стабильность сервиса до 99.9% и обеспечив масштабируемость под растущую нагрузку;\n- Разработал и внедрил Telegram-бота для кандидатов, и HR менеджеров, позволяя автоматизировать общение между ними и выяснять лучших кандидатов;\n\nПроект: log-analyzer – система сбора логов.\n\nЗадачи:\n- Разработка архитектуры продукта;\n- Разработка основного функционала API;\n- Разработка модулей для распознания строковых выражений и преобразований их в sql запрос; \n- Разработка системы авторизации с помощью Keycloak и аутентификации с помощью Casbin;\n- Разработка модуля информационных панелей для наглядного отображения логов в виде графиков;\n- Написание unit-тестов;\n\nДостижения:\n- Разработал ядро преобразования строк в SQL через гибкий синтаксический движок Antlr4:\n- Реализовал модуль, пользовательские фильтры (включая регулярные выражения и составные условия) в оптимизированные SQL-запросы, сократив время анализа логов на 40%;\n- Добавил модуль экспорта логов, позволяющий оптимально экспортировать до 1000000 строк из Clichouse в csv/xlsx;\n- Спроектировал и внедрил архитектуру, обрабатывающую логи с задержкой до 2 сек;\n- Разработал систему динамических дашбордов, ускорившую генерацию отчетов в 5 раз по сравнению с ручным анализом и увеличившую скорость выявления аномалий на 60%;\n\nТехнологии:\nPython, asyncio, FastAPI, Django, PostgreSQL, ClickHouse, RabbitMQ, Redis, Docker, Linux, CI/CD, Celery, Keycloak, Casbin, ANTLR4, Sentry, aiogram, OpenAI."
+    },
+    {
+    "start": "2021-07-01",
+    "end": "2023-05-01",
+    "company": "BASF",
+    "company_id": "10939",
+    "industry": null,
+    "industries": [
+        {
+        "id": "34.421",
+        "name": "Лакокрасочная продукция, сырье (продвижение, оптовая торговля)"
+        },
+        {
+        "id": "34.420",
+        "name": "Лакокрасочная продукция, сырье (производство)"
+        },
+        {
+        "id": "34.417",
+        "name": "Агрохимия (продвижение, оптовая торговля)"
+        },
+        {
+        "id": "29.533",
+        "name": "Сельскохозяйственная продукция (продвижение, оптовая торговля)"
+        },
+        {
+        "id": "47.614",
+        "name": "Нефтехимия (продвижение, оптовая торговля)"
+        }
+    ],
+    "area": null,
+    "company_url": "http://www.basf.ru",
+    "employer": {
+        "id": "10939",
+        "name": "BASF",
+        "url": "https://api.hh.ru/employers/10939",
+        "alternate_url": "https://hh.ru/employer/10939",
+        "logo_urls": {
+        "90": "https://img.hhcdn.ru/employer-logo/4191172.png",
+        "240": "https://img.hhcdn.ru/employer-logo/4191173.png",
+        "original": "https://img.hhcdn.ru/employer-logo-original/937657.png"
+        }
+    },
+    "position": "Python-разработчик",
+    "description": "Проект: smart ai assistant (SAA). Добавление и расширение его возможности в SDK. Работа над созданием API для SAA и тестирование. Проект на микросервисной архитектуре. Команда 9 человек + менеджеры.\n\nЗадачи:\n- Разработка нового и доработка старого функционала;\n- Создание веб-скраперов;\n- Тестирование API и SDK;\n- Оптимизация производительности и масштабируемости;\n- Обеспечение безопасности;\n- Написание Bash, python скриптов;\n- Написание конфигов Pipeline;\n- Переписывание legacy-code;\n- Работа с многопоточностью.\n\nДостижения:\n- Разработал сервисы для сбора, анализа, обработки цифровых следов пользователей;\n- Создал и расширил возможности в SDK, увеличив производительность на 32.6%;\n- Внедрил систему асинхронной обработки запросов с использованием Celery, что позволило увеличить пропускную способность в 2 раза;\n- Добавил индексирование таблиц в PostgreSQL, что улучшило скорость запросов к большим таблицам на 63.7%;\n- Менторил 2 стажеров, способствуя их быстрой адаптации и эффективной работе;\n- Увеличил покрытие тестами кодовой базы с 30% до 80%;\n- Ввел документацию, что увеличило производительность команды и снизило кол-во багов в 2 раза;\n- Создал и поддерживал системы мониторинга, оповещений и логирования, что привело к снижению времени простоя системы на 24.7% и сокращению времени отклика на инциденты на 18.2%\n\nПроект: серверное приложение для IoT системы. Работа над внутренней админкой, расширение API системы, написание системы push-уведомлений. Команда 5 человек.\n\nЗадачи:\n- Разработка нового и доработка старого функционала;\n- Создание веб-скраперов;\n- Тестирование API;\n- Оптимизация производительности и масштабируемости;\n- Мониторинг и логирование;\n- Deploy приложений;\n- Интеграция с внешними API.\n\nДостижения:\n- Спроектировал и реализовал систему для передачи данных с использованием очередей сообщений и событийно ориентированной архитектуры на основе RabbitMQ;\n- Уменьшил задержку одного из критичных методов с ~1500 мс до ~200 мс благодаря внедрению параллельной обработки;\n- Изменил CI/CD пайплайн в команде, сократив время сборки и развертывания на 31.4% и значительно повысив эффективность релизных циклов;\n- Внедрил систему кэширования с использованием Redis, что уменьшило нагрузку на БД в 2 раза;\n- Создал инструмент для автоматического сбора и обработки данных из различных источников для последующего анализа.\n\nТехнологии: Python, FastAPI, openai, azure, pandas, pytest, unittest, selenium, SQL Server, Redis, ChromaDB, RabbitMQ, Safety, Bandit, Redis, Docker, Docker Compose, Swagger, firebase."
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "relocation_possible",
+    "name": "могу переехать"
+    },
+    "area": [],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    },
+    {
+    "id": "flexible",
+    "name": "Гибкий график"
+    },
+    {
+    "id": "remote",
+    "name": "Удаленная работа"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "ready",
+    "name": "Могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "Python",
+    "PostgreSQL",
+    "Git",
+    "Clickhouse",
+    "MS SQL",
+    "Linux",
+    "Docker",
+    "Redis",
+    "RabbitMQ",
+    "Apache Kafka",
+    "Django Framework",
+    "Django Rest Framework",
+    "MongoDB",
+    "CI/CD",
+    "MySQL",
+    "Celery",
+    "s3",
+    "API",
+    "FastAPI",
+    "Flask",
+    "Atlassian Jira",
+    "Agile",
+    "Pytest",
+    "llm",
+    "openai",
+    "aiogram",
+    "Микросервисы",
+    "Наставничество",
+    "code revie",
+    "Архитектура"
+],
+"favorited": false,
+"has_vehicle": null,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": null,
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": true,
+    "comment": null,
+    "contact_value": null,
+    "kind": "phone",
+    "need_verification": true,
+    "verified": false
+    },
+    {
+    "type": {
+        "id": "email",
+        "name": "Эл. почта"
+    },
+    "value": "artem.n.worker@gmail.com",
+    "preferred": false,
+    "contact_value": "artem.n.worker@gmail.com",
+    "kind": "email"
+    },
+    {
+    "type": {
+        "id": "telegram",
+        "name": "Telegram"
+    },
+    "contact_value": "@artlikeme",
+    "value": "@artlikeme",
+    "kind": "primary",
+    "preferred": false,
+    "links": {
+        "android": "https://t.me/artlikeme",
+        "web": "https://t.me/artlikeme",
+        "ios": "https://t.me/artlikeme"
+    }
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": []
+}

@@ -1,0 +1,24 @@
+{
+    "id": "vac_2",
+    "title": "C# .NET Developer",
+    "company": "BankSoft",
+    "salary_from": 120000,
+    "salary_to": 200000,
+    "location": "Санкт-Петербург",
+    "description": "Разработка финансовых приложений на .NET Core",
+    "count_respondents": 32,
+    "requirements": [
+        "C# .NET Core",
+        "ASP.NET Core",
+        "Entity Framework",
+        "SQL Server",
+        "Azure",
+        "Microservices"
+    ],
+    "benefits": [
+        "Официальное трудоустройство",
+        "Премии по результатам",
+        "Обучение за счет компании",
+        "Корпоративные мероприятия"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "vac_3",
+    "title": "Full Stack Developer",
+    "company": "StartupInc",
+    "salary_from": 100000,
+    "salary_to": 180000,
+    "location": "Удаленно",
+    "description": "Полный цикл разработки веб-приложений",
+    "count_respondents": 67,
+    "requirements": [
+        "JavaScript/TypeScript",
+        "React/Vue.js",
+        "Node.js",
+        "MongoDB",
+        "AWS",
+        "Git"
+    ],
+    "benefits": [
+        "Полностью удаленная работа",
+        "Гибкий график",
+        "Опыт в стартапе",
+        "Возможность роста"
+    ]
+}

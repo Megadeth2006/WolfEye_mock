@@ -1,0 +1,284 @@
+{
+"last_name": "Молочников",
+"first_name": "Дмитрий",
+"middle_name": null,
+"title": "Golang-разработчик",
+"created_at": "2025-07-09T20:57:12+0300",
+"updated_at": "2025-09-14T18:05:13+0300",
+"area": {
+    "id": "1",
+    "name": "Москва",
+    "url": "https://api.hh.ru/areas/1"
+},
+"age": 27,
+"gender": {
+    "id": "male",
+    "name": "Мужской"
+},
+"salary": null,
+"photo": null,
+"total_experience": {
+    "months": 54
+},
+"certificate": [],
+"owner": {
+    "id": "157655519",
+    "comments": {
+    "url": "https://api.hh.ru/applicant_comments/157655519",
+    "counters": {
+        "total": 0
+    }
+    }
+},
+"can_view_full_info": true,
+"negotiations_history": {
+    "url": "https://api.hh.ru/resumes/37cd74c9000f1a765200bb41f0323133427552/negotiations_history"
+},
+"hidden_fields": [],
+"actions": {
+    "download": {
+    "pdf": {
+        "url": "https://api.hh.ru/resumes/37cd74c9000f1a765200bb41f0323133427552/download/%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9.pdf?type=pdf"
+    },
+    "rtf": {
+        "url": "https://api.hh.ru/resumes/37cd74c9000f1a765200bb41f0323133427552/download/%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9.rtf?type=rtf"
+    }
+    }
+},
+"alternate_url": "https://hh.ru/resume/37cd74c9000f1a765200bb41f0323133427552",
+"id": "37cd74c9000f1a765200bb41f0323133427552",
+"download": {
+    "pdf": {
+    "url": "https://api.hh.ru/resumes/37cd74c9000f1a765200bb41f0323133427552/download/%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9.pdf?type=pdf"
+    },
+    "rtf": {
+    "url": "https://api.hh.ru/resumes/37cd74c9000f1a765200bb41f0323133427552/download/%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9.rtf?type=rtf"
+    }
+},
+"platform": {
+    "id": "headhunter"
+},
+"employment_form": [
+    {
+    "id": "FULL",
+    "name": "Постоянная работа"
+    }
+],
+"work_format": [
+    {
+    "id": "ON_SITE",
+    "name": "На месте работодателя"
+    }
+],
+"real_id": "253392466",
+"resume_locale": {
+    "id": "RU",
+    "name": "Русский"
+},
+"skills": null,
+"citizenship": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"work_ticket": [
+    {
+    "id": "113",
+    "name": "Россия",
+    "url": "https://api.hh.ru/areas/113"
+    }
+],
+"birth_date": "1998-05-19",
+"education": {
+    "level": {
+    "id": "higher",
+    "name": "Высшее"
+    },
+    "primary": [
+    {
+        "id": "375322629",
+        "name": "Московский авиационный институт (национальный исследовательский университет), Москва",
+        "organization": "Фундаментальная информатика и информационные технологии",
+        "result": "Программирование и разработка ПО",
+        "year": 2021,
+        "university_acronym": "МАИ",
+        "name_id": "39594",
+        "organization_id": null,
+        "result_id": null,
+        "education_level": {
+        "id": "higher",
+        "name": "Высшее"
+        }
+    }
+    ],
+    "additional": [],
+    "attestation": [],
+    "elementary": []
+},
+"employment": {
+    "id": "full",
+    "name": "Полная занятость"
+},
+"employments": [
+    {
+    "id": "full",
+    "name": "Полная занятость"
+    }
+],
+"experience": [
+    {
+    "start": "2022-09-01",
+    "end": null,
+    "company": "Eastwind",
+    "company_id": "1881205",
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": {
+        "id": "7763019",
+        "name": "Eastwind",
+        "url": "https://api.hh.ru/employers/7763019",
+        "alternate_url": "https://hh.ru/employer/7763019",
+        "logo_urls": null
+    },
+    "position": "Golang Developer",
+    "description": "Команда: «Складские терминалы»\nДостижения:  \n\n- Оптимизировал процесс массового сканирования, внедрив gRPC-стримы, что увеличило пропускную способность API в 3 раза.  \n- Ускорил генерацию отчетов в 15 раз за счет партиционирования PostgreSQL таблицы с 1.2 млрд записей.  \n- Реализовал CQRS-архитектуру, разделив write и read модели, что снизило latency GET-запросов с 50 мс до 6 мс.  \n\n\nСтек: Golang, Prometheus, Grafana, Swagger, Docker, PostgreSQL, MongoDB, GitLab, REST, Kafka, gRPC\n\nКоманда: «Личный кабинет»\nДостижения:  \n\n- Устранил проблему потери платежных событий, внедрив Transactional Outbox, что обеспечило 100% доставку сообщений за 11 месяцев.  \n- Ускорил поиск свободных слотов врачей с 1.4 с до 90 мс за счет Redis-кэширования.  \n- Провел рефакторинг монолита в микросервисную архитектуру, сократив время релиза новых фич с 15 до 4 дней.  \n- Реализовал Saga-оркестратор для обработки отмен записей, что исключило \"зависшие\" платежи.  \n\nСтек: Golang, REST, PostgreSQL, GitLab, RabbitMQ, Grafana, Swagger, Docker, Prometheus"
+    },
+    {
+    "start": "2021-04-01",
+    "end": "2022-09-01",
+    "company": "CloudFactory",
+    "company_id": null,
+    "industry": null,
+    "industries": [],
+    "area": null,
+    "company_url": null,
+    "employer": null,
+    "position": "Golang Developer",
+    "description": "Команда: «Платформа»\nДостижения:  \n\n- Исключил дублирование торговых заявок за счет внедрения Idempotency-Key в Kafka, сократив количество отмен на 95%.  \n- Повысил отказоустойчивость системы, внедрив Circuit Breaker для FIX-шлюза.  \n- Оптимизировал запросы по сделкам, снизив p95 с 500 мс до 120 мс за счет индексов и партиционирования.  \n- Автоматизировал документацию API с помощью Swagger.  \n\nСтек: Golang, Prometheus, Grafana, Swagger, Docker, Redis, MongoDB, GitLab, REST, Kafka, gRPC"
+    }
+],
+"language": [
+    {
+    "id": "rus",
+    "name": "Русский",
+    "level": {
+        "id": "l1",
+        "name": "Родной"
+    }
+    },
+    {
+    "id": "eng",
+    "name": "Английский",
+    "level": {
+        "id": "b2",
+        "name": "B2 — Средне-продвинутый"
+    }
+    }
+],
+"metro": null,
+"recommendation": [],
+"relocation": {
+    "type": {
+    "id": "relocation_possible",
+    "name": "могу переехать"
+    },
+    "area": [],
+    "district": []
+},
+"schedule": {
+    "id": "fullDay",
+    "name": "Полный день"
+},
+"schedules": [
+    {
+    "id": "fullDay",
+    "name": "Полный день"
+    }
+],
+"site": [],
+"travel_time": {
+    "id": "any",
+    "name": "Не имеет значения"
+},
+"business_trip_readiness": {
+    "id": "never",
+    "name": "Не могу приезжать в командировки"
+},
+"paid_services": [],
+"portfolio": [],
+"skill_set": [
+    "Go",
+    "Golang",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Kafka",
+    "RabbitMQ",
+    "Docker",
+    "Kubernetes",
+    "Prometheus",
+    "Grafana",
+    "REST",
+    "gRPC",
+    "Swagger",
+    "Микросервисная архитектура"
+],
+"favorited": false,
+"has_vehicle": null,
+"driver_license_types": [],
+"view_without_contacts_reason": null,
+"contact": [
+    {
+    "value": {
+        "country": "7",
+        "city": "977",
+        "number": "5879958",
+        "formatted": "+7 977 587-99-58"
+    },
+    "type": {
+        "id": "cell",
+        "name": "Мобильный телефон"
+    },
+    "preferred": true,
+    "comment": null,
+    "contact_value": "+7 977 587-99-58",
+    "kind": "phone",
+    "need_verification": false,
+    "verified": true
+    },
+    {
+    "type": {
+        "id": "telegram",
+        "name": "Telegram"
+    },
+    "contact_value": "@dimon_pointer",
+    "value": "@dimon_pointer",
+    "kind": "primary",
+    "preferred": false,
+    "links": {
+        "ios": "https://t.me/dimon_pointer",
+        "web": "https://t.me/dimon_pointer",
+        "android": "https://t.me/dimon_pointer"
+    }
+    }
+],
+"specialization": [],
+"professional_roles": [
+    {
+    "id": "96",
+    "name": "Программист, разработчик"
+    }
+],
+"tags": [
+    {
+    "id": "RESUME_MARK"
+    },
+    {
+    "id": "RESUME_RENEWAL"
+    }
+]
+}
