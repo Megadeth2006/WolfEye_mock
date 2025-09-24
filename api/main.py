@@ -1,12 +1,13 @@
 import json
 import uuid
 import random
+import asyncio
 from datetime import datetime, date
 from typing import Dict, List
 from contextlib import asynccontextmanager
 from urllib.parse import urlparse
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from pydantic import BaseModel
 
 from analysis import (
@@ -209,6 +210,144 @@ def extract_resume_id_from_url(url: str) -> str:
         return path_parts[1]
     return str(uuid.uuid4())
 
+async def process_resumes_background(transaction_id: str, urls: List[str]):
+    """Фоновая обработка резюме"""
+    print(f"🚀 Начинаем фоновую обработку транзакции {transaction_id}")
+    print(f"📋 URL для обработки: {urls}")
+    
+    try:
+        # Создаем резюме и связи
+        new_links = []
+        
+        for url in urls:
+            resume_id = extract_resume_id_from_url(str(url))
+            print(f"  🔍 Обрабатываем URL: {url} -> ID: {resume_id}")
+            
+            # Проверяем, есть ли уже такое резюме (переиспользование)
+            if resume_id not in resumes:
+                print(f"  📝 Создаем новое резюме {resume_id}")
+                # Ищем в демо-данных
+                demo_resume = next((r for r in DEMO_RESUMES if r["id"] == resume_id), None)
+                if demo_resume:
+                    print(f"  ✅ Найдено в демо-данных: {demo_resume['id']}")
+                    resume_data = Resume(
+                        id=resume_id,
+                        url=str(url),
+                        data=demo_resume["data"],
+                        status="pending"
+                    )
+                else:
+                    print(f"  ⚠️ Не найдено в демо-данных, создаем базовое")
+                    # Создаем новое резюме
+                    resume_data = Resume(
+                        id=resume_id,
+                        url=str(url),
+                        status="pending"
+                    )
+                resumes[resume_id] = resume_data
+                print(f"  📊 Статус резюме: {resume_data.status}")
+            else:
+                print(f"  ♻️ Резюме {resume_id} уже существует")
+            
+            # Создаем связь транзакция-резюме
+            link = TransactionResumeLink(
+                transaction_id=transaction_id,
+                resume_id=resume_id
+            )
+            transaction_resume_links.append(link)
+            new_links.append(link)
+        
+        # Обрабатываем резюме с задержкой
+        print(f"🔄 Начинаем обработку {len(new_links)} резюме...")
+        for i, link in enumerate(new_links):
+            resume_id = link.resume_id
+            if resume_id in resumes:
+                resume = resumes[resume_id]
+                print(f"⏳ Обрабатываем резюме {i+1}/{len(new_links)}: {resume_id}")
+                print(f"  📊 Текущий статус: {resume.status}")
+                
+                # Эмуляция обработки - 3 секунды на каждое резюме
+                print(f"  ⏰ Ждем 3 секунды...")
+                await asyncio.sleep(3)
+                
+                if resume.data:
+                    try:
+                        processed_data = process_resume_data(resume.data)
+                        resume.processed_data = processed_data
+                        resume.status = "completed"
+                        print(f"✅ Резюме {resume_id} обработано успешно")
+                    except Exception as e:
+                        resume.status = "failed"
+                        print(f"❌ Ошибка обработки резюме {resume_id}: {e}")
+                        # Создаем базовые данные для failed резюме
+                        try:
+                            processed_data = ResumeDetailResponse(
+                                resume_id=resume_id,
+                                score=30,  # Низкий рейтинг для failed резюме
+                                fl_name="Error",
+                                experience_months=0,
+                                flags=[AnalysisFlag(name="Ошибка обработки", fact=str(e))],
+                                years_old=25,
+                                salary=0,
+                                legends=[]
+                            )
+                            resume.processed_data = processed_data
+                            resume.status = "completed"  # Меняем на completed чтобы транзакция завершилась
+                            print(f"✅ Созданы базовые данные для failed резюме {resume_id}")
+                        except Exception as e2:
+                            print(f"❌ Критическая ошибка создания базовых данных: {e2}")
+                else:
+                    # Для резюме без данных создаем базовую информацию
+                    try:
+                        processed_data = ResumeDetailResponse(
+                            resume_id=resume_id,
+                            score=50,  # Базовый рейтинг
+                            fl_name="Unknown",
+                            experience_months=0,
+                            flags=[AnalysisFlag(name="Нет данных", fact="Резюме не найдено в демо-данных")],
+                            years_old=25,
+                            salary=50000,
+                            legends=[]
+                        )
+                        resume.processed_data = processed_data
+                        resume.status = "completed"
+                        print(f"✅ Резюме {resume_id} обработано (базовые данные)")
+                    except Exception as e:
+                        resume.status = "failed"
+                        print(f"❌ Ошибка создания базовых данных для {resume_id}: {e}")
+        
+        # Проверяем статус транзакции (завершена ли)
+        linked_resume_ids = [link.resume_id for link in new_links]
+        print(f"🔍 Проверяем статус транзакции {transaction_id}")
+        print(f"  📋 Связанные резюме: {linked_resume_ids}")
+        
+        for resume_id in linked_resume_ids:
+            if resume_id in resumes:
+                resume = resumes[resume_id]
+                print(f"  📄 Резюме {resume_id}: {resume.status}")
+        
+        all_completed = all(
+            resumes[resume_id].status == "completed" 
+            for resume_id in linked_resume_ids 
+            if resume_id in resumes
+        )
+        print(f"  ✅ Все резюме завершены: {all_completed}")
+        
+        if all_completed and linked_resume_ids:
+            transactions[transaction_id].status = "completed"
+            transactions[transaction_id].completed_at = datetime.now()
+            print(f"🎉 Транзакция {transaction_id} завершена!")
+            print(f"📊 Статус обновлен: {transactions[transaction_id].status}")
+            print(f"📅 Время завершения: {transactions[transaction_id].completed_at}")
+        else:
+            print(f"⚠️ Транзакция {transaction_id} не завершена полностью")
+            print(f"📊 Текущий статус: {transactions[transaction_id].status}")
+            
+    except Exception as e:
+        print(f"❌ Критическая ошибка в фоновой обработке {transaction_id}: {e}")
+        if transaction_id in transactions:
+            transactions[transaction_id].status = "failed"
+
 # Функции анализа маркеров удалены - теперь используется мок-система
 
 
@@ -314,9 +453,13 @@ def process_resume_data(resume_data: dict) -> ResumeDetailResponse:
     
     # Возраст
     age = resume_data.get("age", 25)
+    if age is None:
+        age = 25  # Дефолтный возраст если не указан
     
     # Зарплата
-    salary = resume_data.get("salary", 0) or 0
+    salary = resume_data.get("salary", 0)
+    if salary is None:
+        salary = 0  # Дефолтная зарплата если не указана
     
     # Получаем мок-данные для конкретного резюме
     score, flags = get_mock_score_and_flags(resume_id)
@@ -394,11 +537,10 @@ async def get_vacancies():
     return result
 
 @app.post("/process_resumes", response_model=ProcessResumesResponse)
-async def process_resumes(request: ProcessResumesRequest):
-    """Обработать список резюме"""
+async def process_resumes(request: ProcessResumesRequest, background_tasks: BackgroundTasks):
+    """Обработать список резюме (асинхронно)"""
     transaction_id = str(uuid.uuid4())
     
-    # Атомарная транзакция: создаем все элементы сразу
     try:
         # 1. Создаем транзакцию
         transaction = Transaction(
@@ -417,99 +559,18 @@ async def process_resumes(request: ProcessResumesRequest):
                 vacancy_transactions[vacancy_id] = []
             vacancy_transactions[vacancy_id].append(transaction_id)
         
-        # 2. Создаем резюме и связи
-        new_resumes = []
-        new_links = []
+        # 2. Добавляем фоновую задачу для обработки резюме
+        print(f"🚀 Добавляем фоновую задачу для транзакции {transaction_id}")
+        background_tasks.add_task(process_resumes_background, transaction_id, request.urls)
         
-        for url in request.urls:
-            resume_id = extract_resume_id_from_url(str(url))
-            
-            # Проверяем, есть ли уже такое резюме (переиспользование)
-            if resume_id not in resumes:
-                # Ищем в демо-данных
-                demo_resume = next((r for r in DEMO_RESUMES if r["id"] == resume_id), None)
-                if demo_resume:
-                    resume_data = Resume(
-                        id=resume_id,
-                        url=str(url),
-                        data=demo_resume["data"],
-                        status="pending"
-                    )
-                else:
-                    # Создаем новое резюме
-                    resume_data = Resume(
-                        id=resume_id,
-                        url=str(url),
-                        status="pending"
-                    )
-                resumes[resume_id] = resume_data
-                new_resumes.append(resume_data)
-            
-            # Создаем связь транзакция-резюме
-            link = TransactionResumeLink(
-                transaction_id=transaction_id,
-                resume_id=resume_id
-            )
-            transaction_resume_links.append(link)
-            new_links.append(link)
-        
-        # 3. Обрабатываем резюме (меняем статусы резюме, не трогая транзакцию)
-        for resume_id in [link.resume_id for link in new_links]:
-            if resume_id in resumes:
-                resume = resumes[resume_id]
-                
-                # Эмуляция обработки - 3 секунды на каждое резюме
-                import time
-                time.sleep(3)
-                
-                if resume.data:
-                    try:
-                        processed_data = process_resume_data(resume.data)
-                        resume.processed_data = processed_data
-                        resume.status = "completed"
-                    except Exception as e:
-                        resume.status = "failed"
-                        print(f"Error processing resume {resume_id}: {e}")
-                else:
-                    # Для резюме без данных создаем базовую информацию
-                    try:
-                        processed_data = ResumeDetailResponse(
-                            resume_id=resume_id,
-                            score=50,  # Базовый рейтинг
-                            fl_name="Unknown",
-                            experience_months=0,
-                            flags=[AnalysisFlag(name="Нет данных", fact="Резюме не найдено в демо-данных")],
-                            years_old=25,
-                            salary=50000,
-                            legends=[]
-                        )
-                        resume.processed_data = processed_data
-                        resume.status = "completed"
-                    except Exception as e:
-                        resume.status = "failed"
-                        print(f"Error creating basic resume data for {resume_id}: {e}")
-        
-        # 4. Проверяем статус транзакции (завершена ли)
-        linked_resume_ids = [link.resume_id for link in new_links]
-        all_completed = all(
-            resumes[resume_id].status == "completed" 
-            for resume_id in linked_resume_ids 
-            if resume_id in resumes
-        )
-        
-        if all_completed and linked_resume_ids:
-            transaction.status = "completed"
-            transaction.completed_at = datetime.now()
-        
+        print(f"✅ Транзакция {transaction_id} создана, обработка запущена в фоне")
         return ProcessResumesResponse(transaction_id=transaction_id)
         
     except Exception as e:
         # В случае ошибки откатываем изменения
         if transaction_id in transactions:
             del transactions[transaction_id]
-        # Удаляем созданные связи
-        transaction_resume_links[:] = [link for link in transaction_resume_links if link.transaction_id != transaction_id]
-        raise HTTPException(status_code=500, detail=f"Error processing resumes: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error creating transaction: {str(e)}")
 
 @app.get("/results/{transaction_id}", response_model=GetResultsResponse)
 async def get_results(transaction_id: str):
@@ -532,19 +593,8 @@ async def get_results(transaction_id: str):
             if resume.processed_data:
                 results.append(resume.processed_data)
     
-    # Определяем статус транзакции
-    all_completed = all(
-        resumes[resume_id].status == "completed" 
-        for resume_id in linked_resume_ids 
-        if resume_id in resumes
-    )
-    
-    if all_completed and linked_resume_ids:
-        transaction.status = "completed"
-        transaction.completed_at = datetime.now()
-    else:
-        # Если не все резюме обработаны, статус остается "processing"
-        transaction.status = "processing"
+    # Статус транзакции обновляется только в фоновой функции
+    # Здесь мы только читаем текущий статус
     
     return GetResultsResponse(
         transaction_id=transaction_id,
@@ -558,7 +608,10 @@ async def get_results(transaction_id: str):
 async def get_all_results():
     """Получить список всех транзакций"""
     results = []
+    print(f"🔍 Получение всех транзакций. Всего: {len(transactions)}")
+    
     for transaction in transactions.values():
+        print(f"  📋 Транзакция {transaction.id}: {transaction.status} (завершена: {transaction.completed_at})")
         results.append(AnalysisTransactionStatus(
             transaction_id=transaction.id,
             name=transaction.name,
@@ -585,9 +638,13 @@ async def get_preview(transaction_id: str):
     processed_count = 0
     results = []
     
+    print(f"🔍 Preview для транзакции {transaction_id}")
+    print(f"  📋 Связанные резюме: {linked_resume_ids}")
+    
     for resume_id in linked_resume_ids:
         if resume_id in resumes:
             resume = resumes[resume_id]
+            print(f"  📄 Резюме {resume_id}: статус={resume.status}, processed_data={'есть' if resume.processed_data else 'нет'}")
             if resume.status == "completed" and resume.processed_data:
                 processed_count += 1
                 results.append(resume.processed_data)
