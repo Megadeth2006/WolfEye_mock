@@ -18,7 +18,6 @@ class GetVacanciesResponse(BaseModel):
     name: str = Field(..., description="Название вакансии")
     transaction_id: str = Field(..., description="ID новой транзакции для отслеживания результатов")
     count_respondents: NonNegInt = Field(..., description="Количество респондентов")
-    all_transactions: list[Transaction] = Field(default_factory=list, description="Все транзакции для этой вакансии")
 
 
 class ProcessResumesRequest(BaseModel):

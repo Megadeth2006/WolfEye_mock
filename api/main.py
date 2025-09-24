@@ -8,6 +8,7 @@ from contextlib import asynccontextmanager
 from urllib.parse import urlparse
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from analysis import (
@@ -50,7 +51,13 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan
 )
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 # Хранилище данных в памяти
 transactions: Dict[str, Transaction] = {}
 resumes: Dict[str, Resume] = {}
@@ -519,20 +526,26 @@ async def get_vacancies():
     for vacancy in DEMO_VACANCIES:
         vacancy_id = vacancy["id"]
         
-        # Получаем транзакции для этой вакансии
+        # Получаем последнюю транзакцию для этой вакансии
         vacancy_transaction_ids = vacancy_transactions.get(vacancy_id, [])
-        all_transactions = []
+        last_transaction_id = ""
         
-        for transaction_id in vacancy_transaction_ids:
-            if transaction_id in transactions:
-                transaction = transactions[transaction_id]
-                all_transactions.append(transaction)
+        if vacancy_transaction_ids:
+            # Находим последнюю транзакцию по времени создания
+            latest_transaction = None
+            for transaction_id in vacancy_transaction_ids:
+                if transaction_id in transactions:
+                    transaction = transactions[transaction_id]
+                    if latest_transaction is None or transaction.created_at > latest_transaction.created_at:
+                        latest_transaction = transaction
+            
+            if latest_transaction:
+                last_transaction_id = latest_transaction.id
         
         result.append(GetVacanciesResponse(
             name=vacancy["title"],
-            transaction_id="",  # Транзакции создаются только при обработке резюме
-            count_respondents=vacancy["count_respondents"],
-            all_transactions=all_transactions
+            transaction_id=last_transaction_id,  # ID последней транзакции
+            count_respondents=vacancy["count_respondents"]
         ))
     return result
 
