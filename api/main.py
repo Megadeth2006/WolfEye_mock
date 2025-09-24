@@ -500,7 +500,7 @@ def process_resume_data(resume_data: dict) -> ResumeDetailResponse:
     resume_id = resume_data.get("id", "")
     first_name = resume_data.get("first_name", "")
     last_name = resume_data.get("last_name", "")
-    fl_name = f"{last_name}" if first_name and last_name else "Unknown"
+    fl_name = f"{first_name}" if first_name and last_name else "Unknown"
     
     # Опыт работы в месяцах
     total_experience = resume_data.get("total_experience", {})
